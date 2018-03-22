@@ -128,21 +128,25 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/full-screen</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview</li>
 
+<li>$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/katex</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
-
-<li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
 
 <li>$:/palette</li>
 
 <li>$:/plugins/JR/Presenter</li>
+
+<li>$:/plugins/JR/slides/ColorSwitcher</li>
 
 <li>$:/plugins/JR/slidesnstories</li>
 
@@ -152,9 +156,25 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/slideshow</li>
+
+<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.15/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.15/index.html/$:/plugins/tiddlywiki/external-attachments</li>
+
+<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.15/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.15/index.html/$:/plugins/tiddlywiki/twitter</li>
+
+<li>$:/state/Excise/--495191322/tagnew</li>
+
+<li>$:/state/Excise/-652472545/tagnew</li>
+
+<li>$:/state/image-picker/system--28815228</li>
+
+<li>$:/state/image-picker/system--733407874</li>
+
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/sidebar</li>
+
+<li>$:/state/slide</li>
 
 <li>$:/state/tab--1963855381</li>
 
@@ -168,13 +188,23 @@ Error message and password prompt
 
 <li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
+<li>$:/state/toc/Contents-Slide-1: Raw Data Overview-209360082</li>
+
 <li>$:/state/toc/Contents-Tasks-1637712383</li>
 
 <li>$:/state/toc/Contents-Tasks-209360082</li>
 
+<li>$:/state/toc/Contents/Slide-1: Raw Data Overview-root_dirs-209360082</li>
+
+<li>$:/state/toc/Contents/Slide-1: Raw Data Overview/root_dirs-Layer-209360082</li>
+
 <li>$:/StoryList</li>
 
 <li>$:/temp/info-plugin</li>
+
+<li>$:/temp/MultiMenu</li>
+
+<li>$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
@@ -188,23 +218,35 @@ Error message and password prompt
 
 <li>$:/view</li>
 
+<li>10_11_16_TensileTestResults</li>
+
+<li>11_03_16_TensileTestResults</li>
+
+<li>Agenda</li>
+
+<li>boresight</li>
+
 <li>Contents</li>
 
 <li>GettingStarted</li>
 
-<li>Slide-0: Agenda</li>
+<li>Heaters.csv</li>
 
-<li>Slide-1: Raw Data Overview</li>
+<li>LAMPS Data Overview</li>
 
-<li>Slide-2: Sensors: Heaters</li>
+<li>Layer</li>
 
-<li>Slide-3: Sensors: Thermocouples</li>
+<li>LayerBWImage</li>
 
-<li>Slide-4: Sensors: Quartz Lamp Duty Cycle</li>
+<li>New Tiddler</li>
 
-<li>Slide-5: Sensors: Thermal Imaging</li>
+<li>root_dirs</li>
 
-<li>Slide-6: Sensors: Boresight Camera</li>
+<li>Untitled</li>
+
+<li>Untitled 1</li>
+
+<li>Untitled 2</li>
 
 </ul>
 </p>
@@ -366,11 +408,17 @@ $(snippet)$
 <div created="20180321210048523" modified="20180321210048523" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/full-screen">
 <pre>show</pre>
 </div>
+<div created="20180322162037267" modified="20180322162039747" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import">
+<pre>show</pre>
+</div>
 <div created="20180321162154312" modified="20180321210818051" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>show</pre>
 </div>
 <div created="20180321205949027" modified="20180321205958658" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview">
 <pre>show</pre>
+</div>
+<div created="20180322161311387" modified="20180322161313779" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/katex">
+<pre>no</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.15">
 <pre>{
@@ -8639,11 +8687,6 @@ $(snippet)$
 <div created="20180321160831562" modified="20180321160831562" title="$:/DefaultTiddlers">
 <pre></pre>
 </div>
-<div status="complete" title="$:/Import">
-<pre>The following tiddlers were imported:
-
-# [[$:/plugins/JR/slidesnstories]]</pre>
-</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -9041,6 +9084,22 @@ $(snippet)$
     }
 }</pre>
 </div>
+<div created="20170321215917930" creator="JR" modified="20180322211201005" modifier="JR" origin="Slides and Slices" title="$:/plugins/JR/slides/ColorSwitcher">
+<pre>&lt;$reveal type=&quot;match&quot; state=&quot;!!theme&quot; text=&quot;Yellow&quot;&gt;
+&lt;$button  style=&quot;background-color:black;&quot; set=&quot;!!theme&quot; setTo=&quot;Dark&quot; message=&quot;tw-set-field&quot;&gt;°&lt;/$button&gt;
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&quot;!!theme&quot; text=&quot;Dark&quot;&gt;
+&lt;$button style=&quot;background-color:white;&quot; set=&quot;!!theme&quot; setTo=&quot;Light&quot; message=&quot;tw-set-field&quot;&gt;*&lt;/$button&gt;
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&quot;!!theme&quot; text=&quot;Light&quot;&gt;
+&lt;$button style=&quot;background-color:yellow;&quot; set=&quot;!!theme&quot; setTo=&quot;Yellow&quot; message=&quot;tw-set-field&quot;&gt;*&lt;/$button&gt;
+&lt;/$reveal&gt;
+&lt;$list filter=&quot;[[$:/plugins/JR/slides/ColorSwitcher]!has[theme]]&quot;&gt;
+&lt;$button style=&quot;background-color:black;&quot;&gt;
+&lt;$action-setfield $tiddler=&quot;$:/plugins/JR/slides/ColorSwitcher&quot; theme=&quot;Dark&quot;/&gt;
+°&lt;/$button&gt;
+&lt;/$list&gt;</pre>
+</div>
 <div author="JR" created="20170309122059757" creator="JR" description="slidesnstories" modified="20170309122109828" modifier="JR" plugin-type="plugin" source="slidesnstories.tiddlyspot.com" title="$:/plugins/JR/slidesnstories" type="application/json" version="0.0.12">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -9281,11 +9340,115 @@ $(snippet)$
 <div created="20180321160816394" modified="20180321165158460" title="$:/SiteTitle">
 <pre>LAMPS Data &amp; Utilities</pre>
 </div>
+<div created="20170321215917927" creator="JR" modified="20180322211201004" modifier="JR" origin="[[Slides and Slices]]" tags="[[Slides and Slices]]" title="$:/slideshow">
+<pre>\define next-actions()
+&lt;$list filter=&quot;[{$:/temp/jumpslide!!text}]&quot;
+&lt;$action-navigate $to=&lt;&lt;currentTiddler&gt;&gt;/&gt;
+&lt;/$list&gt;
+&lt;$list filter='01 02 03 04 05 06 07 08 09 10' variable=&quot;number&quot;&gt;
+&lt;$list filter=&lt;&lt;jumpslide&gt;&gt; variable=&quot;sourcetitle&quot;&gt;
+&lt;$action-setfield $tiddler=&lt;&lt;slidetitle&gt;&gt; 
+text=&lt;&lt;slicetext&gt;&gt;/&gt;
+&lt;/$list&gt;
+&lt;$list filter=&lt;&lt;jumpkeep&gt;&gt; variable=&quot;sourcetitle&quot;&gt;
+&lt;$action-setfield $tiddler=&lt;&lt;slidetitle&gt;&gt; 
+keep=&quot;yes&quot;/&gt;
+&lt;/$list&gt;
+&lt;/$list&gt;
+&lt;$list filter=&quot;[{$:/temp/jumpslide!!text}]+[!search:text[sli01]!search:text[sli02]!search:text[sli03]]&quot; variable=&quot;texter&quot;&gt;
+&lt;$action-setfield $tiddler=&quot;$:/temp/Slide/01&quot; text=&lt;&lt;texttext&gt;&gt;/&gt;
+&lt;/$list&gt;
+&lt;$list filter=&quot;[{$:/temp/jumpslide!!text}]+[tag[splash]]&quot;&gt;
+&lt;$action-setfield $tiddler=&quot;$:/temp/Slide/00&quot; text=&quot;@@text-align:center;&lt;h1&gt;{{$:/HistoryList!!current-tiddler}}@@&quot; show=&quot;yes&quot;/&gt;
+&lt;/$list&gt;
+&lt;$list filter=&quot;[{$:/temp/jumpslide!!text}]-[has[img]]-[tag[splash]]&quot;&gt;
+&lt;$action-setfield $tiddler=&quot;$:/temp/Slide/01&quot; show=&quot;yes&quot;/&gt;
+&lt;/$list&gt;
+\end
+
+\define slidetitle()
+$:/temp/Slide/$(number)$
+\end
+
+\define jumpslide()
+[{$:/temp/jumpslide!!text}search:text[sli$(number)$]]
+\end
+
+\define jumpkeep()
+[{$:/temp/jumpslide!!text}]+[search:text[sli$(number)$]search:keep[$(number)$]]
+\end
+\define slicetext()
+&lt;&lt;slice &quot;$(sourcetitle)$&quot; $(number)$&gt;&gt;
+\end
+\define texttext()
+&lt;$transclude tiddler=&quot;$(texter)$&quot; field=&quot;text&quot; mode=&quot;block&quot;/&gt;
+\end
+
+\define jump-actions()
+&lt;$set name=&quot;listcontent&quot; filter=&quot;[list[$:/slideshow]allbefore:include{$:/temp/jumpslide!!text}]&quot;&gt;
+&lt;$action-setfield $tiddler=&quot;$:/StoryList&quot; $field=&quot;list&quot; $value=&lt;&lt;listcontent&gt;&gt; /&gt;
+&lt;/set&gt;
+&lt;$action-deletetiddler $filter=&quot;[prefix[$:/temp/Slide/]]&quot;/&gt;
+&lt;&lt;next-actions&gt;&gt;
+&lt;$action-deletetiddler $filter=&quot;[[$:/temp/jumpslide]]&quot;/&gt;
+\end
+
+\define lingo-base() $:/language/CloseAll/
+
+\define drop-actions()
+&lt;$action-listops $tiddler=&quot;$:/slideshow&quot; $subfilter=&quot;+[insertbefore:currentTiddler&lt;actionTiddler&gt;]&quot;/&gt;
+\end
+
+&lt;$list filter=&quot;[list[$:/slideshow]]&quot; history=&quot;$:/HistoryList&quot; storyview=&quot;pop&quot; emptyMessage=&quot;&lt;center&gt;Choose a slideshow:&lt;/center&gt;{{$:/plugins/JR/slides/launch}}&quot;&gt;
+&lt;$linkcatcher to=&quot;$:/temp/jumpslide&quot; message=&quot;tm-navigate&quot; actions=&lt;&lt;jump-actions&gt;&gt; &gt;
+&lt;div style=&quot;position: relative;&quot;&gt;
+&lt;$droppable actions=&lt;&lt;drop-actions&gt;&gt;&gt;
+&lt;div class=&quot;tc-droppable-placeholder&quot;&gt;
+&amp;nbsp;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;$button tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=&quot;tc-btn-invisible tc-btn-mini&quot;&gt;
+&lt;$action-listops $tiddler=&quot;$:/slideshow&quot; $field=&quot;list&quot; $subfilter=&quot;+[!&lt;currentTiddler&gt;]&quot;/&gt;
+&amp;times;&lt;/$button&gt;&lt;$link to={{!!title}}&gt;&lt;div style=&quot;background-color:eeeeee;width:99%;&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/div&gt;&lt;/$link&gt;
+&lt;/div&gt;
+&lt;/$droppable&gt;
+&lt;/div&gt;
+&lt;/$linkcatcher&gt;
+&lt;/$list&gt;
+&lt;$tiddler tiddler=&quot;&quot;&gt;
+&lt;$droppable actions=&lt;&lt;drop-actions&gt;&gt;&gt;
+&lt;div class=&quot;tc-droppable-placeholder&quot;&gt;
+&amp;nbsp;
+&lt;/div&gt;
+&lt;/$droppable&gt;
+&lt;/$tiddler&gt;</pre>
+</div>
+<div created="20180322162324787" modified="20180322162401627" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.15/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.15/index.html/$:/plugins/tiddlywiki/external-attachments">
+<pre>no</pre>
+</div>
+<div created="20180322162426027" modified="20180322162440252" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.15/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.15/index.html/$:/plugins/tiddlywiki/twitter">
+<pre>no</pre>
+</div>
+<div created="20180322171054759" modified="20180322171054759" title="$:/state/Excise/--495191322/tagnew">
+<pre>yes</pre>
+</div>
+<div created="20180322194347864" modified="20180322194347864" title="$:/state/Excise/-652472545/tagnew">
+<pre>yes</pre>
+</div>
+<div created="20180322202602593" modified="20180322202604017" title="$:/state/image-picker/system--28815228">
+<pre>hide</pre>
+</div>
+<div created="20180322202850777" modified="20180322202851449" title="$:/state/image-picker/system--733407874">
+<pre>hide</pre>
+</div>
 <div created="20180321214318901" modified="20180321214318901" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
 <div created="20180321161144791" modified="20180321200825423" title="$:/state/sidebar">
 <pre>yes</pre>
+</div>
+<div created="20170214124717040" creator="JR" modified="20180322211201004" modifier="JR" origin="Slides and Slices" show="" tags="[[Slides and Slices]]" title="$:/state/slide">
+<pre></pre>
 </div>
 <div created="20180321162108599" modified="20180321210635202" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
@@ -9293,17 +9456,20 @@ $(snippet)$
 <div created="20180321162101719" modified="20180321210756274" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20180321161157471" modified="20180321210754082" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20180321161157471" modified="20180322162243491" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
-<div created="20180321210159226" modified="20180321210159226" title="$:/state/tab/moresidebar-401116514">
-<pre>$:/core/ui/MoreSideBar/All</pre>
+<div created="20180321210159226" modified="20180322161949299" title="$:/state/tab/moresidebar-401116514">
+<pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20180321161125471" modified="20180321210827995" title="$:/state/tab/sidebar--1835078512">
-<pre>Contents</pre>
+<div created="20180321161125471" modified="20180322213847637" title="$:/state/tab/sidebar--1835078512">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20180321162131696" modified="20180321162137447" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
+</div>
+<div created="20180322172541127" modified="20180322210317635" title="$:/state/toc/Contents-Slide-1: Raw Data Overview-209360082">
+<pre>close</pre>
 </div>
 <div created="20180321162008376" modified="20180321162009105" title="$:/state/toc/Contents-Tasks-1637712383">
 <pre>close</pre>
@@ -9311,7 +9477,13 @@ $(snippet)$
 <div created="20180321161835840" modified="20180321162806424" title="$:/state/toc/Contents-Tasks-209360082">
 <pre>open</pre>
 </div>
-<div list="[[Slide-0: Agenda]] [[Slide-6: Sensors: Boresight Camera]] [[Slide-1: Raw Data Overview]] [[Slide-5: Sensors: Thermal Imaging]] [[Slide-3: Sensors: Thermocouples]] [[Slide-4: Sensors: Quartz Lamp Duty Cycle]] [[Slide-2: Sensors: Heaters]]" title="$:/StoryList">
+<div created="20180322194425870" modified="20180322203050609" title="$:/state/toc/Contents/Slide-1: Raw Data Overview-root_dirs-209360082">
+<pre>open</pre>
+</div>
+<div created="20180322203104858" modified="20180322205629531" title="$:/state/toc/Contents/Slide-1: Raw Data Overview/root_dirs-Layer-209360082">
+<pre>close</pre>
+</div>
+<div created="20180322211201004" list="Agenda [[LAMPS Data Overview]] 10_11_16_TensileTestResults 11_03_16_TensileTestResults Layer Heaters.csv LayerBWImage boresight [[ Slide-1: Raw Data Overview]] root_dirs" modified="20180322211201004" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9327,27 +9499,27 @@ $(snippet)$
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;http://localhost:8000/presentation.html&quot;
+            &quot;text&quot;: &quot;file:///home/sahabi/Downloads/tiddlywikilocations/presentation.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;localhost:8000&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;localhost&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;http:&quot;
+            &quot;text&quot;: &quot;file:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
-            &quot;text&quot;: &quot;8000&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/presentation.html&quot;
+            &quot;text&quot;: &quot;/home/sahabi/Downloads/tiddlywikilocations/presentation.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9355,10 +9527,16 @@ $(snippet)$
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;http://localhost:8000&quot;
+            &quot;text&quot;: &quot;file://&quot;
         }
     }
 }</pre>
+</div>
+<div created="20180322211201004" menu="" modified="20180322211201004" parent="" title="$:/temp/MultiMenu">
+<pre></pre>
+</div>
+<div created="20180322162252671" modified="20180322162345397" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
+<pre>html</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.15">
 <pre>{
@@ -9478,8 +9656,126 @@ $(snippet)$
 <div created="20180321165100664" modified="20180321165101464" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
 <pre>100%</pre>
 </div>
-<div created="20180321205925251" modified="20180321210017258" title="$:/view">
+<div created="20180321205925251" modified="20180322202202809" title="$:/view">
 <pre>zoomin</pre>
+</div>
+<div created="20180322194348871" modified="20180322212409205" tags="root_dirs" title="10_11_16_TensileTestResults">
+<pre>&lt;style type=&quot;text/css&quot;&gt;
+  &lt;!-- 
+  BODY { font-family : ariel, monospace, sans-serif; }
+  P { font-weight: normal; font-family : ariel, monospace, sans-serif; color: black; background-color: transparent;}
+  B { font-weight: normal; color: black; background-color: transparent;}
+  A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  .VERSION { font-size: small; font-family : arial, sans-serif; }
+  .NORM  { color: black;  background-color: transparent;}
+  .FIFO  { color: purple; background-color: transparent;}
+  .CHAR  { color: yellow; background-color: transparent;}
+  .DIR   { color: blue;   background-color: transparent;}
+  .BLOCK { color: yellow; background-color: transparent;}
+  .LINK  { color: aqua;   background-color: transparent;}
+  .SOCK  { color: fuchsia;background-color: transparent;}
+  .EXEC  { color: green;  background-color: transparent;}
+  --&gt;
+ &lt;/style&gt;
+&lt;body&gt;
+	10_11_16_TensileTestResults &lt;br&gt;
+	├── [[10_11_16_ZbarBuild.id_tens]]&lt;br&gt;
+	├── [[10_11_16_ZbarBuild.is_tens]]&lt;br&gt;
+	├── [[10_11_16_ZbarBuild.is_tens.pdf]]&lt;br&gt;
+	├── [[10_11_16_ZbarBuild.is_tens.raw]]&lt;br&gt;
+	├── [[10_11_16_ZbarBuild.is_tens.rlt]]&lt;br&gt;
+	└── 10_11_16_ZbarBuild.is_tens_RawData&lt;br&gt;
+	    ├── [[Specimen_RawData_1.csv| TestRaw]]&lt;br&gt;
+	    ├── ..&lt;br&gt;
+	    └── Specimen_RawData_30.csv&lt;br&gt;
+	&lt;br&gt;&lt;br&gt;
+	&lt;hr&gt;
+&lt;/body&gt;
+
+[[Back to slide |LAMPS Data Overview]]</pre>
+</div>
+<div created="20180322195944820" modified="20180322212426044" tags="root_dirs" title="11_03_16_TensileTestResults">
+<pre>&lt;style type=&quot;text/css&quot;&gt;
+  &lt;!-- 
+  BODY { font-family : ariel, monospace, sans-serif; }
+  P { font-weight: normal; font-family : ariel, monospace, sans-serif; color: black; background-color: transparent;}
+  B { font-weight: normal; color: black; background-color: transparent;}
+  A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  .VERSION { font-size: small; font-family : arial, sans-serif; }
+  .NORM  { color: black;  background-color: transparent;}
+  .FIFO  { color: purple; background-color: transparent;}
+  .CHAR  { color: yellow; background-color: transparent;}
+  .DIR   { color: blue;   background-color: transparent;}
+  .BLOCK { color: yellow; background-color: transparent;}
+  .LINK  { color: aqua;   background-color: transparent;}
+  .SOCK  { color: fuchsia;background-color: transparent;}
+  .EXEC  { color: green;  background-color: transparent;}
+  --&gt;
+ &lt;/style&gt;
+&lt;body&gt;
+	11_3_16_TensileTestResults &lt;br&gt;
+	├── [[11_3_16_ZbarBuild.id_tens|id_tens]]&lt;br&gt;
+	├── [[11_3_16_ZbarBuild.is_tens|is_tens]]&lt;br&gt;
+	├── [[11_3_16_ZbarBuild.is_tens.pdf|report]]&lt;br&gt;
+	├── [[11_3_16_ZbarBuild.is_tens.raw|testraw]]&lt;br&gt;
+	└── [[11_3_16_ZbarBuild.is_tens.rlt|rlt]]&lt;br&gt;
+	&lt;br&gt;&lt;br&gt;
+	&lt;hr&gt;
+&lt;/body&gt;
+
+[[Back to slide |LAMPS Data Overview]]</pre>
+</div>
+<div created="20180321210831332" modified="20180322213407501" tags="Contents" title="Agenda" type="text/vnd.tiddlywiki">
+<pre>!! 1- [[Overview of the data generated by LAMPS|LAMPS Data Overview]]
+
+!! 2- [[LAMPS Data sharing policy |LAMPS Data Sharing Policy]]
+
+!! 3- [[Utilities &amp; LAMPS data pre-processing |Utilities &amp; LAMPS Data Pre-Processing]]
+
+!! 4- [[Requirements from the other groups |Requirements]]
+
+!! 5- [[Questions |Questions]]</pre>
+</div>
+<div created="20180322172133416" modified="20180322212801349" tags="root_dirs" title="boresight">
+<pre>!!! The bore-sight data contains 500+ .ats files:
+
+ &lt;style type=&quot;text/css&quot;&gt;
+  &lt;!-- 
+  BODY { font-family : ariel, monospace, sans-serif; }
+  P { font-weight: normal; font-family : ariel, monospace, sans-serif; color: black; background-color: transparent;}
+  B { font-weight: normal; color: black; background-color: transparent;}
+  A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  .VERSION { font-size: small; font-family : arial, sans-serif; }
+  .NORM  { color: black;  background-color: transparent;}
+  .FIFO  { color: purple; background-color: transparent;}
+  .CHAR  { color: yellow; background-color: transparent;}
+  .DIR   { color: blue;   background-color: transparent;}
+  .BLOCK { color: yellow; background-color: transparent;}
+  .LINK  { color: aqua;   background-color: transparent;}
+  .SOCK  { color: fuchsia;background-color: transparent;}
+  .EXEC  { color: green;  background-color: transparent;}
+  --&gt;
+ &lt;/style&gt;
+
+&lt;body&gt;
+	&lt;a&gt;boresight&lt;/a&gt;&lt;br&gt;
+	├── [[Rec-000001.ats|.ats Files]]&lt;br&gt;
+	├── ..&lt;br&gt;
+	└── Rec-000571.ats
+	&lt;br&gt;&lt;br&gt;
+	&lt;hr&gt;
+&lt;/body&gt;
+
+[[Back to slide |LAMPS Data Overview]]</pre>
 </div>
 <div created="20180321160848856" list-before="$:/core/ui/SideBar/Open" modified="20180321210427324" tags="$:/tags/SideBar" title="Contents">
 <pre>&lt;&lt;toc-selective-expandable 'Contents'&gt;&gt;</pre>
@@ -9502,38 +9798,105 @@ Before you start storing important information in ~TiddlyWiki it is important to
 See the [[control panel|$:/ControlPanel]] for more options.
 </pre>
 </div>
-<div created="20180321210831332" modified="20180321214501757" tags="Contents" title="Slide-0: Agenda" type="text/vnd.tiddlywiki">
-<pre>* Overview of the data
+<div created="20180322204510107" modified="20180322213611686" title="Heaters.csv">
+<pre>|^ ''Time'' |^ ''upper'' |^ ''oven'' |^ ''nitrogen'' |^ ''part piston'' |^ ''lower oven east'' |^ //''15 more columns...''// |
+| 3:15:40 PM | 219.5 | 134.1 | 155.3 | 133.7 | 118.3 | ... |
+//6 more rows...//
 
-* Data sharing policy
+&lt;hr&gt;
 
-* Detailed description of the raw data
+[[Back to layer |Layer]]
+</pre>
+</div>
+<div created="20180321213435238" modified="20180322212531277" tags="Contents" title="LAMPS Data Overview">
+<pre>!!! The raw data consists of two builds and testing data corresponding to these builds. 
 
-* Detailed description of the utilities
+!!! The root directory is organized as follow:
 
-* Detailed description of the processed data
+{{root_dirs}}
 
-* Input from other groups
+[[Back to agenda |Agenda]]</pre>
+</div>
+<div created="20180322173655920" modified="20180322212255564" tags="root_dirs" title="Layer">
+<pre> &lt;style type=&quot;text/css&quot;&gt;
+  &lt;!-- 
+  BODY { font-family : ariel, monospace, sans-serif; }
+  P { font-weight: normal; font-family : ariel, monospace, sans-serif; color: black; background-color: transparent;}
+  B { font-weight: normal; color: black; background-color: transparent;}
+  A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  .VERSION { font-size: small; font-family : arial, sans-serif; }
+  .NORM  { color: black;  background-color: transparent;}
+  .FIFO  { color: purple; background-color: transparent;}
+  .CHAR  { color: yellow; background-color: transparent;}
+  .DIR   { color: blue;   background-color: transparent;}
+  .BLOCK { color: yellow; background-color: transparent;}
+  .LINK  { color: aqua;   background-color: transparent;}
+  .SOCK  { color: fuchsia;background-color: transparent;}
+  .EXEC  { color: green;  background-color: transparent;}
+  --&gt;
+ &lt;/style&gt;
+&lt;body&gt;
+	&lt;a&gt;Layer 370&lt;/a&gt;&lt;br&gt;
+	├── [[15.15.39.68324.png|LayerBWImage]]&lt;br&gt;
+	├── ..&lt;br&gt;
+	├── ..&lt;br&gt;
+	├── [[15.15.45.05474 511 by 640.32f]]&lt;br&gt;
+	├── ..&lt;br&gt;
+	├── ..&lt;br&gt;
+	├── [[Heaters.csv]]&lt;br&gt;
+	├── [[laser parameters.txt]]&lt;br&gt;
+	├── [[Oxygen.csv]]&lt;br&gt;
+	├── [[Quartz Lamp Duty Cycle.csv]]&lt;br&gt;
+	├── [[Thermal ROI Mean over Time.tot]]&lt;br&gt;
+	└── [[Thermocouples.csv]]&lt;br&gt;
+	&lt;br&gt;&lt;br&gt;
+	&lt;hr&gt;
+&lt;/body&gt;
 
-* Questions</pre>
+[[Back to slide |LAMPS Data Overview]]</pre>
 </div>
-<div created="20180321213435238" modified="20180321213618860" tags="Contents" title="Slide-1: Raw Data Overview">
-<pre></pre>
+<div created="20180322203303565" modified="20180322213557557" tags="Layer" title="LayerBWImage">
+<pre>[img width=640 [bw.png]]\
+
+&lt;hr&gt;
+
+[[Back to layer |Layer]]</pre>
 </div>
-<div created="20180321210930188" modified="20180321213636948" tags="Contents" title="Slide-2: Sensors: Heaters">
-<pre></pre>
+<div created="20180322160625413" modified="20180322161332259" tags="" title="New Tiddler">
+<pre>$:/plugins/tiddlywiki/ExternalTiddlersPlugin</pre>
 </div>
-<div created="20180321211107540" modified="20180321213652678" tags="Contents" title="Slide-3: Sensors: Thermocouples">
-<pre></pre>
+<div created="20180322171101839" modified="20180322214029870" tags="[[Slide-1: Raw Data Overview]]" title="root_dirs">
+<pre>
+        	root&lt;br&gt;
+        	├── &lt;a &gt;10_11_16_build&lt;/a&gt;&lt;br&gt;
+        	│   ├── [[boresight]]&lt;br&gt;
+        	│   └── &lt;a &gt;layers&lt;/a&gt;&lt;br&gt;
+	        │   &amp;nbsp;&amp;nbsp;&amp;nbsp; ├── [[Layer 370|Layer]]&lt;br&gt;
+        	│   &amp;nbsp;&amp;nbsp;&amp;nbsp; ├── &lt;a &gt;..&lt;/a&gt;&lt;br&gt;
+        	│   &amp;nbsp;&amp;nbsp;&amp;nbsp; ├── &lt;a &gt;..&lt;/a&gt;&lt;br&gt;
+        	│   &amp;nbsp;&amp;nbsp;&amp;nbsp; └── &lt;a &gt;Layer 400&lt;/a&gt;&lt;br&gt;
+        	├── 11_03_16_build&lt;br&gt;
+        	│   └── layers&lt;br&gt;
+        	│   &amp;nbsp;&amp;nbsp;&amp;nbsp; ├── Layer 0&lt;br&gt;
+        	│   &amp;nbsp;&amp;nbsp;&amp;nbsp; ├── ..&lt;br&gt;
+        	│   &amp;nbsp;&amp;nbsp;&amp;nbsp; ├── ..&lt;br&gt;
+        	│   &amp;nbsp;&amp;nbsp;&amp;nbsp; └── Layer 721&lt;br&gt;
+        	├── [[10_11_16_TensileTestResults]]&lt;br&gt;
+        	└── [[11_03_16_TensileTestResults]]
+        	&lt;br&gt;&lt;br&gt;
+        	&lt;hr&gt;</pre>
 </div>
-<div created="20180321211324292" modified="20180321213701773" tags="Contents" title="Slide-4: Sensors: Quartz Lamp Duty Cycle">
-<pre></pre>
+<div created="20180322202814841" modified="20180322202814841" title="Untitled">
+<pre>file:///media/usb/10_11_16_build/layers/Layer%20370/15.15.39.68324.png</pre>
 </div>
-<div created="20180321213404399" modified="20180321213709797" tags="Contents" title="Slide-5: Sensors: Thermal Imaging">
-<pre></pre>
+<div title="Untitled 1">
+<pre>file:///media/usb/10_11_16_build/layers/Layer%20370/15.15.39.68324.png</pre>
 </div>
-<div created="20180321213724030" modified="20180321213941005" tags="Contents" title="Slide-6: Sensors: Boresight Camera">
-<pre></pre>
+<div title="Untitled 2">
+<pre>file:///media/usb/tree.html</pre>
 </div>
 
 </div>
