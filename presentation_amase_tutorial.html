@@ -122,7 +122,11 @@ Error message and password prompt
 
 <li>$:/config/NewJournal/Text</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview</li>
 
 <li>$:/config/RelinkOnRename</li>
 
@@ -184,6 +188,8 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth</li>
 
+<li>$:/view</li>
+
 <li>1.1 Tutorial Objectives</li>
 
 <li>1.2 Getting Started</li>
@@ -207,6 +213,8 @@ Error message and password prompt
 <li>2.1 Issues and Troubleshooting</li>
 
 <li>Distributed Cooperation</li>
+
+<li>Draft of '2.1 Issues and Troubleshooting'</li>
 
 <li>LmcpGen Installation</li>
 
@@ -237,7 +245,13 @@ Error message and password prompt
 
 by: Mohammed Alshiekh</pre>
 </div>
+<div created="20180330042930556" modified="20180330042930556" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all">
+<pre>show</pre>
+</div>
 <div created="20180329235152160" modified="20180329235152160" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import">
+<pre>show</pre>
+</div>
+<div created="20180330043043361" modified="20180330043043361" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview">
 <pre>show</pre>
 </div>
 <div created="20180328220419802" modified="20180328220419802" title="$:/config/RelinkOnRename">
@@ -8848,7 +8862,7 @@ exports.details = DetailsWidget;
 <div created="20180328171534833" modified="20180328171615337" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20180328155619245" modified="20180329235432875" title="$:/state/tab/sidebar--1835078512">
+<div created="20180328155619245" modified="20180330043052033" title="$:/state/tab/sidebar--1835078512">
 <pre>Slides</pre>
 </div>
 <div created="20180329143844481" modified="20180329211426751" title="$:/state/toc/Slides-2. Getting Started-943322058">
@@ -8857,7 +8871,7 @@ exports.details = DetailsWidget;
 <div created="20180329190126361" modified="20180330000238945" title="$:/state/toc/Slides-3. Examples Walkthrough-943322058">
 <pre>close</pre>
 </div>
-<div list="[[1.8 OpenUxAS Overview]] [[2.0 Interaction via Scripting]] [[1.9 Running OpenUxAS]] [[1.5 Running OpenAMASE]] [[2.1 Issues and Troubleshooting]] [[1.6 OpenAMASE Setup Tool]] [[1.7 OpenAMASE Maps Overlay]] [[1.4 OpenAMASE Overview]] [[1.3 Examples Walkthrough]] [[1.2 Getting Started]] [[1.1 Tutorial Objectives]]" title="$:/StoryList">
+<div list="[[2.1 Issues and Troubleshooting]] [[1.8 OpenUxAS Overview]] [[Draft of '2.1 Issues and Troubleshooting']] [[2.0 Interaction via Scripting]] [[1.9 Running OpenUxAS]] [[1.7 OpenAMASE Maps Overlay]] [[1.6 OpenAMASE Setup Tool]] [[1.5 Running OpenAMASE]] [[1.4 OpenAMASE Overview]] [[1.3 Examples Walkthrough]] [[1.2 Getting Started]] [[1.1 Tutorial Objectives]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9027,30 +9041,32 @@ exports.details = DetailsWidget;
 <div created="20180328162708938" modified="20180329160847297" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
 <pre>95%</pre>
 </div>
-<div created="20180328155600551" modified="20180330042610348" tags="Slides" title="1.1 Tutorial Objectives">
+<div created="20180330043049032" modified="20180330043404686" title="$:/view">
+<pre>zoomin</pre>
+</div>
+<div created="20180328155600551" modified="20180330043013211" tags="Slides" title="1.1 Tutorial Objectives">
 <pre>The objective of this tutorial is to:
 
 # have working instances of &lt;&lt;OpenAMASE&gt;&gt; and &lt;&lt;OpenUxAS&gt;&gt;.
 # have a high-level understanding of what ~OpenAMASE/~OpenUxAS can be used for.
-# have a high-level understanding of how ~OpenAMASE and ~OpenUxAS work together.
+# have a high-level understanding of how ~OpenAMASE and ~OpenUxAS interact.
 # be able to create your own scenarios.
 # be able to interact with ~OpenAMASE and ~OpenUxAS.
 # be aware of the kind of issues that you might face.
 # be able to fix and/or report an issue.</pre>
 </div>
-<div created="20180328163504080" modified="20180330042620310" tags="Slides" title="1.2 Getting Started">
+<div created="20180328163504080" modified="20180330043356716" tags="installation Slides" title="1.2 Getting Started">
 <pre>!! Installation steps
 
-If you are using Mac OS X, you must install [[XCode|https://developer.apple.com/xcode/]] first. The rest of the guide works for Mac OS X and Ubuntu Linux.
+Note: If you are using Mac OS X, you must install [[XCode|https://developer.apple.com/xcode/]] first. The rest of the guide works for Mac OS X and Ubuntu Linux.
 
 &lt;$details summary=&quot;TLDR;&quot; state=&quot;!!accordion&quot;&gt;
 
 ```
 wget https://bootstrap.pypa.io/get-pip.py 
 sudo -H python get-pip.py
-sudo -H pip install virtualenv
-virtualenv uav_sim
-cd uav_sim; source bin/activate
+mkdir uav_sim
+cd uav_sim
 wget -O - https://raw.githubusercontent.com/afrl-rq/OpenUxAS/develop/install_prerequisites.sh | bash
 cd OpenUxAS; ninja -C build
 ninja -C build test
@@ -9062,14 +9078,13 @@ Install pip and virtualenv:
 ```
 wget https://bootstrap.pypa.io/get-pip.py 
 sudo python get-pip.py
-sudo pip install virtualenv
 ```
 
 Create a virtual environment then activate it:
 
 ```
-virtualenv uav_sim
-cd uav_sim; source bin/activate
+mkdir uav_sim
+cd uav_sim
 ```
 
 Run the installation script which will install all prerequisites ~OpenAMASE and prepares ~OpenUxAS to be built. 
@@ -9083,7 +9098,7 @@ wget -O - https://raw.githubusercontent.com/afrl-rq/OpenUxAS/develop/install_pre
 If the installation completes as expected, You should get the following output when you run `ls`:
 
 ```
-bin  include  lib  LmcpGen  local  OpenAMASE  OpenUxAS  pip-selfcheck.json
+LmcpGen  OpenAMASE  OpenUxAS  
 
 ```
 
@@ -9143,8 +9158,10 @@ Follow the steps in
 &lt;/$details&gt;
 </pre>
 </div>
-<div created="20180329234219743" modified="20180330042648814" tags="Slides OpenAMASE" title="1.4 OpenAMASE Overview">
-<pre>In a nutshell, ~OpenAMASE allows you to:
+<div created="20180329234219743" modified="20180330045222128" tags="Slides OpenAMASE" title="1.4 OpenAMASE Overview">
+<pre>~OpenAMASE is developed by the Air Force Research Laboratory, Aerospace System Directorate, Power and Control Division. OpenAMASE is under active development.
+
+In a nutshell, ~OpenAMASE allows you to:
 
 # Create UAV scenarios
 
@@ -9158,13 +9175,13 @@ Follow the steps in
 
 To use ~OpenAMASE you need:
 
-# Knowledge of UAS operations
+# Knowledge of UAV operations
 
 # Basic knowledge of flight mechanics, navigation
 
 # Time to learn data specifications and develop scenarios
   
-Look in the doc folder of ~OpenAMASE for the wiki
+Look in the doc folder of ~OpenAMASE for the wiki.
 
 
 </pre>
@@ -9199,8 +9216,27 @@ $
 
 [img[worldmap.jpg]]</pre>
 </div>
-<div created="20180330042408444" modified="20180330042713032" tags="Slides OpenUxAS" title="1.8 OpenUxAS Overview">
-<pre></pre>
+<div created="20180330042408444" modified="20180330045322350" tags="Slides OpenUxAS" title="1.8 OpenUxAS Overview">
+<pre>~OpenUxAS is developed by the Air Force Research Laboratory, Aerospace System Directorate, Power and Control Division. ~OpenUxAS is under active development.
+
+* UxAS consists of a collection of modular services that interact via a common message passing architecture. Similar to Robot Operating System (ROS) pub/sub design.
+
+* UxAS uses the open-source library ~ZeroMQ to connect all services to each other. 
+
+* The content of each message conforms to the Light-weight Message Control Protocol (LMCP) format. 
+
+Quoting the below from the [[introduction|https://github.com/afrl-rq/OpenUxAS]] describing the capabilities of ~OpenUxAS:
+
+&lt;&lt;&lt;
+Consider a simple example: the automated construction of the flight pattern to conduct surveillance of geometric lines (e.g. perimeters, roads, coasts). A “line search task” message describes the line to be imaged and the desired camera angle. Using this input description, a line search service calculates the appropriate waypoints to achieve the proper view angle. When the UAV arrives at the first waypoint corresponding to the line search task, the line search service continuously updates the desired camera pointing location to smoothly step the camera along the intended route.
+
+
+
+In addition to surveillance pattern automation, UxAS contains services that automate route planning, coordinate behavior among multiple vehicles, connect with external software, validate mission requests, log and diagram message traffic, and optimize task ordering. In all, UxAS has approximately 30 services.
+
+A core functionality provided by UxAS is the mechanism to calculate near-optimal task allocation across teams of unmanned vehicles. With a collection of tasks that require servicing and a pool of vehicles available to service those tasks, UxAS is able to determine which vehicle should do which task in the proper order. This task assignment pipeline is carried out by a series of services working together in a complex sequence.
+
+&lt;&lt;&lt;</pre>
 </div>
 <div created="20180330001639438" modified="20180330042721992" tags="OpenUxAS Configurations Slides" title="1.9 Running OpenUxAS">
 <pre>
@@ -9345,6 +9381,11 @@ $BIN -cfgPath ../cfg_WaterwaySearch.xml
 !!!! Things to Try:
 
 Edit the automation request, '03_Example_DistributedCooperation/~MessagesToSend/~CoordinatedAutomationRequest.xml' and comment out, or remove the entry '&lt;int64&gt;3000&lt;/int64&gt;' in the '~EntityList'. Rerun the example. Since it will have '~AssignmentCoordination' for all of the requested vehicle, the assignment coordinator will not have to wait until the end of the '~MaximumResponseTime' to start the assignment process.</pre>
+</div>
+<div created="20180329211754641" draft.of="2.1 Issues and Troubleshooting" draft.title="2.1 Issues and Troubleshooting" modified="20180330043948892" tags="Slides" title="Draft of '2.1 Issues and Troubleshooting'">
+<pre>High speeds
+
+Can be difficult to debug. (&quot;is it me or the software?&quot; situations)</pre>
 </div>
 <div created="20180329143211537" list="" modified="20180330042620311" tags="[[1.2 Getting Started]]" title="LmcpGen Installation">
 <pre>    &lt;$details summary=&quot;Install LmcpGen&quot; state=&quot;!!accordion&quot;&gt;
