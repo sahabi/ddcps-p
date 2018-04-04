@@ -220,6 +220,8 @@ Error message and password prompt
 
 <li>Distributed Cooperation</li>
 
+<li>Draft of 'Slides'</li>
+
 <li>LmcpGen Installation</li>
 
 <li>Macros</li>
@@ -8913,7 +8915,7 @@ exports.details = DetailsWidget;
 <div created="20180328160327717" modified="20180328160327717" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20180329160748598" modified="20180329160749359" title="$:/state/sidebar">
+<div created="20180329160748598" modified="20180330174309053" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20180328162654742" modified="20180328162654742" title="$:/state/tab--1963855381">
@@ -8946,7 +8948,7 @@ exports.details = DetailsWidget;
 <div created="20180329190126361" modified="20180330000238945" title="$:/state/toc/Slides-3. Examples Walkthrough-943322058">
 <pre>close</pre>
 </div>
-<div list="[[1.5 Examples Walkthrough]] [[Distributed Cooperation]] [[Waterway Search]] [[2.1 Issues and Troubleshooting]] [[2.0 Interaction via Scripting]] [[1.9 Running OpenUxAS]] [[1.8 OpenAMASE Background Overlay]] [[1.7 OpenAMASE Setup Tool]] [[1.6 Running OpenAMASE]] [[1.4 OpenUxAS Overview]] [[1.3 OpenAMASE Overview]] [[1.2 Getting Started]] [[1.1 Tutorial Objectives]]" title="$:/StoryList">
+<div list="[[Draft of 'Slides']] [[2.1 Issues and Troubleshooting]] [[2.0 Interaction via Scripting]] [[1.9 Running OpenUxAS]] [[1.8 OpenAMASE Background Overlay]] [[1.7 OpenAMASE Setup Tool]] [[1.6 Running OpenAMASE]] [[1.5 Examples Walkthrough]] [[1.4 OpenUxAS Overview]] [[1.3 OpenAMASE Overview]] [[1.2 Getting Started]] [[1.1 Tutorial Objectives]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8995,8 +8997,8 @@ exports.details = DetailsWidget;
     }
 }</pre>
 </div>
-<div created="20180328155610272" modified="20180330000222334" title="$:/temp/search">
-<pre></pre>
+<div created="20180328155610272" modified="20180330174216848" title="$:/temp/search">
+<pre>Slides</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.15">
 <pre>{
@@ -9119,7 +9121,7 @@ exports.details = DetailsWidget;
 <div created="20180330043049032" modified="20180330151734437" title="$:/view">
 <pre>zoomin</pre>
 </div>
-<div created="20180328155600551" modified="20180330043013211" tags="Slides" title="1.1 Tutorial Objectives">
+<div created="20180328155600551" modified="20180330174248375" tags="Slides" title="1.1 Tutorial Objectives">
 <pre>The objective of this tutorial is to:
 
 # have working instances of &lt;&lt;OpenAMASE&gt;&gt; and &lt;&lt;OpenUxAS&gt;&gt;.
@@ -9128,9 +9130,18 @@ exports.details = DetailsWidget;
 # be able to create your own scenarios.
 # be able to interact with ~OpenAMASE and ~OpenUxAS.
 # be aware of the kind of issues that you might face.
-# be able to fix and/or report an issue.</pre>
+# be able to fix and/or report an issue.
+
+
+!! Content
+
+&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+
+&lt;&lt;toc-selective-expandable 'Slides' &quot;sort[title]&quot;&gt;&gt;
+
+&lt;/div&gt;</pre>
 </div>
-<div created="20180328163504080" modified="20180330145524908" tags="installation Slides" title="1.2 Getting Started">
+<div created="20180328163504080" modified="20180330174328165" tags="installation Slides" title="1.2 Getting Started">
 <pre>!! Installation steps
 
 Note: If you are using Mac OS X, you must install [[XCode|https://developer.apple.com/xcode/]] first. The rest of the guide works for Mac OS X and Ubuntu Linux.
@@ -9279,20 +9290,26 @@ Some common tasks:
 # Loiter task
 # Overwatch task</pre>
 </div>
-<div created="20180328220859642" modified="20180330173303965" tags="Slides" title="1.5 Examples Walkthrough">
-<pre>&lt;$details summary=&quot;Waterway Search&quot; state=&quot;!!accordion&quot;&gt;
+<div created="20180328220859642" modified="20180330174042334" tags="Slides" title="1.5 Examples Walkthrough">
+<pre>!! Waterway Search
+
+&lt;$details summary=&quot;Show content&quot; state=&quot;!!accordion&quot;&gt;
 
 {{Waterway Search}}
 
 &lt;/$details&gt;
 
-&lt;$details summary=&quot;Distributed Cooperation&quot; state=&quot;!!accordion&quot;&gt;
+!! Distributed Cooperation
+
+&lt;$details summary=&quot;Show content&quot; state=&quot;!!accordion&quot;&gt;
 
 {{Distributed Cooperation}}
 
 &lt;/$details&gt;
 
-&lt;$details summary=&quot;Automation Diagram &quot; state=&quot;!!accordion&quot;&gt;
+!! Automation Diagram
+
+&lt;$details summary=&quot;Show content&quot; state=&quot;!!accordion&quot;&gt;
 
 !!! Exercise 
 
@@ -9715,7 +9732,7 @@ Here is an image of an the setup tool running.
 
 # Create a running script file that loads the scenario file you just created on launch. then execute the script.</pre>
 </div>
-<div created="20180328221126066" modified="20180330173356029" tags="Slides OpenAMASE" title="1.8 OpenAMASE Background Overlay">
+<div created="20180328221126066" modified="20180330173830197" tags="Slides OpenAMASE" title="1.8 OpenAMASE Background Overlay">
 <pre>AMASE supports &quot;world files&quot; that are described in degrees.  I have attached an example.  Below is the procedure:
 
 # Find/create an image with known geo-coordinates
@@ -9730,7 +9747,7 @@ This is how the background looks:
 
 !! Exercise
 
-# Do the above steps for the waterway search example.
+# Apply the above steps for the waterway search example.
  
 </pre>
 </div>
@@ -9901,6 +9918,13 @@ $BIN -cfgPath ../cfg_WaterwaySearch.xml
 !!! Exercise
 
 Edit the automation request, '03_Example_DistributedCooperation/~MessagesToSend/~CoordinatedAutomationRequest.xml' and comment out, or remove the entry '&lt;int64&gt;3000&lt;/int64&gt;' in the '~EntityList'. Rerun the example. Since it will have '~AssignmentCoordination' for all of the requested vehicle, the assignment coordinator will not have to wait until the end of the '~MaximumResponseTime' to start the assignment process.</pre>
+</div>
+<div created="20180328162948680" draft.of="Slides" draft.title="Slides" modified="20180330174221855" tags="$:/tags/SideBar" title="Draft of 'Slides'">
+<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+
+&lt;&lt;toc-selective-expandable 'Slides' &quot;sort[title]&quot;&gt;&gt;
+
+&lt;/div&gt;</pre>
 </div>
 <div created="20180329143211537" list="" modified="20180330042620311" tags="[[1.2 Getting Started]]" title="LmcpGen Installation">
 <pre>    &lt;$details summary=&quot;Install LmcpGen&quot; state=&quot;!!accordion&quot;&gt;
